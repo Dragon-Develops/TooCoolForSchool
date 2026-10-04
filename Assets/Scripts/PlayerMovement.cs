@@ -36,19 +36,6 @@ public class ZeroGMovement : MonoBehaviour
         if (keyboard.spaceKey.isPressed) moveUpDown = 1f;
         else if (keyboard.leftShiftKey.isPressed) moveUpDown = -1f;
         else moveUpDown = 0f;
-        
-        //Attempt at 3rd person pov camera
-        float mouseX = Input.GetAxis("Mouse X");
-
-        x += 1 * mouseX;
-
-        Quaternion angle = new Quaternion();
-        angle.eulerAngles = new Vector3(0, transform.rotation.y + x, 0);
-        transform.rotation = angle;
-
-
-        Camera.main.transform.LookAt(transform);
-        Camera.main.transform.Translate(Vector3.right * mouseX * Time.deltaTime * 2.8f);//the 2.8f is the sensibility
     }
 
     void FixedUpdate()

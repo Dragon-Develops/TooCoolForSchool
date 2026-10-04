@@ -36,7 +36,7 @@ public class ZeroGMovement : MonoBehaviour
         if (keyboard.spaceKey.isPressed) moveUpDown = 1f;
         else if (keyboard.leftShiftKey.isPressed) moveUpDown = -1f;
         else moveUpDown = 0f;
-
+        
         //Attempt at 3rd person pov camera
         float mouseX = Input.GetAxis("Mouse X");
 

@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -525, y: 156}
+  m_AnchoredPosition: {x: -479.6, y: 148}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90353351
@@ -289,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 108217617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 28, z: 2.0099945}
+  m_LocalPosition: {x: 0, y: 27.824, z: 2.0099945}
   m_LocalScale: {x: 1, y: 1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -582,8 +582,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.33145648
-  m_Height: 2.4582465
+  m_Radius: 0.35
+  m_Height: 2.5
   m_Direction: 2
   m_Center: {x: -0, y: 0, z: 0.06413877}
 --- !u!114 &108217626
@@ -786,6 +786,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &184463218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184463211}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05, y: 0.07, z: 0.65}
+  m_Center: {x: 0, y: 0, z: -0.25}
 --- !u!1001 &187303614
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1243,7 +1264,7 @@ Transform:
   m_GameObject: {fileID: 416152409}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.5, y: 28, z: 4.0099945}
+  m_LocalPosition: {x: -0.5, y: 27.824, z: 4.0099945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1532,7 +1553,7 @@ Transform:
   m_GameObject: {fileID: 867094765}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.5, y: 28, z: 4.0099945}
+  m_LocalPosition: {x: -0.5, y: 27.824, z: 4.0099945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1963,6 +1984,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 184463214}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f91ce842daef33b408195925b6754eaf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 184463218}
   m_SourcePrefab: {fileID: 100100000, guid: f91ce842daef33b408195925b6754eaf, type: 3}
 --- !u!1 &1061205056
 GameObject:

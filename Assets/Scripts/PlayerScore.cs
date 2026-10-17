@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro; // 1. REQUIRED to control TextMeshPro via code
+using UnityEngine.SceneManagement;
 
 public class PlayerScore : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class PlayerScore : MonoBehaviour
     void Update()
     {
         checkGameState(gameState);
+        if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) && gameState!=0))
+        {
+            ResetScene();
+        }
     }
 
     public void AddScore(int amount)
@@ -73,5 +78,11 @@ public class PlayerScore : MonoBehaviour
         {
             winText.enabled= true;
         }
+    }
+
+    public void ResetScene()
+    {
+        // Gets the currently active scene and reloads it
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -1220,6 +1220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1d63f642ebbdb4eb38a57a250ab00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startUI: {fileID: 1941422869}
   Speed: 5
   SprintMultiplier: 1
   Sideways:

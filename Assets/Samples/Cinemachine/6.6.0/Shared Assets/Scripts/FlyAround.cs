@@ -10,6 +10,7 @@ namespace Unity.Cinemachine.Samples
     /// </summary>
     public class FlyAround : MonoBehaviour, Unity.Cinemachine.IInputAxisOwner
     {
+        public GameObject startUI;
         [Tooltip("Speed when moving")]
         public float Speed = 10;
 
@@ -92,6 +93,17 @@ namespace Unity.Cinemachine.Samples
             var rot = Quaternion.Euler(Tilt.Value, Pan.Value, 0);
             var movement = rot * new Vector3(Sideways.Value, UpDown.Value, Forward.Value);
             var speed = Sprint.Value < 0.01f ? Speed : Speed * SprintMultiplier;
+
+            if (startUI.activeSelf==true)
+            {
+                speed= 0f;
+            }
+
+            if (startUI.activeSelf==false)
+            {
+                speed= Sprint.Value < 0.01f ? Speed : Speed * SprintMultiplier;
+            }
+
 
             // Apply motion
             transform.SetPositionAndRotation(transform.position + speed * Time.deltaTime * movement, rot);

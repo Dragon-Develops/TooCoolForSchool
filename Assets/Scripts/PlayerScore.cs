@@ -9,6 +9,8 @@ public class PlayerScore : MonoBehaviour
 
     // 2. This creates a slot in the Inspector where we will link our UI text
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreTracker;
+    public TextMeshProUGUI scoreTracker2;
     public Canvas loseText;
     public Canvas winText;
 
@@ -72,11 +74,15 @@ public class PlayerScore : MonoBehaviour
         if (state==-1)
         {
             loseText.enabled= true;
+            scoreTracker.text= "Crystals found: "+score+"/5";
+            scoreTracker2.text= "Crystals found: "+score+"/5";
         }
 
         if (state==1)
         {
             winText.enabled= true;
+            scoreTracker.text= "Crystals found: "+score+"/5";
+            scoreTracker2.text= "Crystals found: "+score+"/5";
         }
     }
 

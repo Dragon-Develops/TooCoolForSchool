@@ -4,9 +4,10 @@ public class EnemyFollow : MonoBehaviour
 {
     private Transform player;
     private Rigidbody rb;
+    public GameObject startUI;
 
-    public float swimForce = 10f;
-    public float turnSpeed = 2f;
+    public float swimForce;
+    public float turnSpeed;
 
     void Start()
     {
@@ -20,6 +21,18 @@ public class EnemyFollow : MonoBehaviour
 
     void FixedUpdate() // Use FixedUpdate for Rigidbody physics
     {
+        if (startUI.activeSelf==true)
+        {
+            swimForce= 0f;
+            turnSpeed= 0f;
+        }
+
+        if (startUI.activeSelf==false)
+        {
+            swimForce = 150f;
+            turnSpeed= 10f;
+        }
+
         if (player == null) return;
 
         // 1. Calculate direction to player

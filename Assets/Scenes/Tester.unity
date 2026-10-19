@@ -1974,6 +1974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269b63860747a53409ec1d35ec92895e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
+  startUI: {fileID: 1941422869}
   swimForce: 150
   turnSpeed: 10
 --- !u!54 &184463215
@@ -6295,11 +6296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.37
+      value: 19.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6307,7 +6308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6319,7 +6320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f91ce842daef33b408195925b6754eaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
